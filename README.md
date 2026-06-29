@@ -1,5 +1,4 @@
-# 
-Serum proteomics in ALS
+# Serum proteomics in ALS
 
 Code for the survival-association and tissue-specificity analyses and figures in
 the manuscript.
