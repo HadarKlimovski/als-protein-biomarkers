@@ -32,7 +32,7 @@ required files in `data/`:
 - `significant_uniivariate_fdr_for_paper_new.csv` — Tel Aviv univariate Cox table
 - `serum_cox_unadjusted.csv`, `serum_cox_adjusted.csv` — Oxford univariate Cox (collaborator-provided)
 - `univariate_unadj_vs_adj.csv` — adjusted-vs-unadjusted Cox table
-- `nature_medicine.mplstyle` — plot stylesheet
+
 
 HPA tissue data are downloaded from `proteinatlas.org` and cached in `data/`.
 
