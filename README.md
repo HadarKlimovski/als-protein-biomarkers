@@ -1,4 +1,4 @@
-# Klimovski et al. — serum proteomics in ALS
+#  Circulating protein profiling identifies prognostic biomarkers in amyotrophic lateral sclerosis (Klimovski & Weinreich et al.)
 
 Code for the survival-association and tissue-specificity analyses and figures in
 the manuscript.
