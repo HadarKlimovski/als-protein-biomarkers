@@ -23,20 +23,6 @@ Python ≥ 3.8. Install dependencies:
 pip install -r requirements.txt
 ```
 
-## Data
-
-Scripts read their inputs from a `data/` folder at the repo root (override with
-the `ALS_DATA_DIR` environment variable); figures are written next to each
-script. **Patient-level data are not distributed** — place your own copies of the
-required files in `data/`:
-
-- `proteomics_survival_from_enrollment.csv` — Tel Aviv proteomics + survival
-- `significant_uniivariate_fdr_for_paper_new.csv` — Tel Aviv univariate Cox table
-- `serum_cox_unadjusted.csv`, `serum_cox_adjusted.csv` — Oxford univariate Cox (collaborator-provided)
-- `univariate_unadj_vs_adj.csv` — adjusted-vs-unadjusted Cox table
-
-HPA tissue data are downloaded from `proteinatlas.org` and cached in `data/`.
-The plot stylesheet (`figure_style.mplstyle`) ships with the repo at the root.
 
 > **Cox analysis is Tel Aviv (discovery) only.** The Oxford replication Cox was
 > run by collaborators with the same model; its tables (`serum_cox_unadjusted.csv`,
@@ -99,8 +85,9 @@ cd sup_figure_1 && python assemble_supfig1.py
 | `supfig2_celltype_origin.py` | Sup. | HPA single-cell expression for GSN, IGFBP2, MEGF10. |
 | `supfig2_celltype_origin_all.py` | Sup. | HPA single-cell expression across all 154 cell types. |
 
-HPA data are downloaded from `proteinatlas.org` (cached in `data/` on first run);
-outbound HTTPS required.
+HPA tissue data are downloaded from `proteinatlas.org` and cached in `data/`.
+The plot stylesheet (`figure_style.mplstyle`) ships with the repo at the root.
+
 
 ## `figure_4/` — Figure 4 (prognostic prediction)
 
