@@ -25,11 +25,7 @@ pip install -r requirements.txt
 
 
 > **Cox analysis is Tel Aviv (discovery) only.** The Oxford replication Cox was
-> run by collaborators with the same model; its tables (`serum_cox_unadjusted.csv`,
-> `serum_cox_adjusted.csv`) are consumed by the plotting scripts but not generated
-> here. The two analysis scripts are clean distillations of the original
-> exploratory code and are **validated** to reproduce the published Tel Aviv
-> tables to rounding precision (max Δ ≈ 5×10⁻⁷).
+> run by collaborators with the same model.
 
 ## `figure_2/` — Figure 2 (unadjusted univariate Cox)
 
