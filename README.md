@@ -88,8 +88,7 @@ The plot stylesheet (`figure_style.mplstyle`) ships with the repo at the root.
 ## `figure_4/` — Figure 4 (prognostic prediction)
 
 Cross-validated Cox prognostic models (Royston–Parmar flexible parametric
-survival, 10-fold CV × 5 repeats), **survival from enrollment / sampling anchor
-only**. Self-contained: two analysis pipelines generate the result tables, one
+survival, 10-fold CV × 5 repeats), **survival from enrollment. Self-contained: two analysis pipelines generate the result tables, one
 plotting script renders the 6-panel figure (Supplementary Figure 3 reads the
 same tables).
 
@@ -126,13 +125,10 @@ cd sup_figure_3 && python supfig3_cindex_shuffle.py
 
 ### Figure 4 / Sup. Figure 3 data
 
-The two analysis pipelines read **raw patient-level CSVs** (not distributed; set
-via env var) and write their result tables into `data/figure_4/`:
-
 | Env var | Raw input |
 |---|---|
-| `ALS_RAW_TEL` | Tel Aviv patient data (`Tel_aviv_full_data.csv`) |
-| `ALS_RAW_OXFORD` | Oxford patient data (`oxford_patient_data.csv`, incl. NfL) |
+| `ALS_RAW_TEL` | Tel Aviv patient data
+| `ALS_RAW_OXFORD` | Oxford patient data
 
 Result tables (consumed by both plotting scripts, written under
 `$ALS_DATA_DIR`, default `data/figure_4/`):
